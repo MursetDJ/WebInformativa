@@ -2,15 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Code-Store</title>
+        <title>Code Store</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
     </head>
 
     <body>
         <header></header>
         <main>
-            <div class="nav-bar"></div>
-            <div class="hero">
+            <section class="nav-bar"></section>
+            <section class="hero">
                 <div class="hero-contenido">
                     <h1 class="hero-titulo">
                         Productos al por <br />
@@ -24,29 +30,45 @@
                         poderosa: hacer que los productos lleguen a las <br />
                         manos correctas.
                     </p>
-                    <a href="#" class="hero-boton">Acerca de...</a>
+                    <a href="#" class="hero-button">Acerca de...</a>
                 </div>
-            </div>
-            <div class="news-discounts">
+            </section>
+            <section class="news-discounts">
                 <div class="new-this-week">
-                    <h3>Lo Nuevo De Esta Semana</h3>
+                    <h2>Lo Nuevo De Esta Semana</h2>
                     <div class="discount-container">
-                        <div class="product-card"></div>
+                        <article class="product-card">
+                            <figure class="product-image-container">
+                                <img
+                                    src="./assets/images/ipad.png"
+                                    alt="product image"
+                                    loading="lazy"
+                                />
+                            </figure>
+                            <div class="product-info">
+                                <span class="product-category">CATEGORÍA</span>
+                                <p class="product-title">NOMBRE DEL PRODUCTO</p>
+                                <p class="product-price">$100</p>
+                                <button class="secondary-button">
+                                    Comprar Ya
+                                </button>
+                            </div>
+                        </article>
                         <div class="product-card"></div>
                         <div class="product-card"></div>
                     </div>
                 </div>
                 <div class="sales">
-                    <h3>Súper Descuentos</h3>
+                    <h2>Súper Descuentos</h2>
                     <div class="discount-container">
                         <div class="product-card"></div>
                         <div class="product-card"></div>
                         <div class="product-card"></div>
                     </div>
                 </div>
-            </div>
-            <div class="categories"></div>
-            <div class="about-us"></div>
+            </section>
+            <section class="categories"></section>
+            <section class="about-us"></section>
         </main>
         <footer>
             <div class="footer-segment">
@@ -62,19 +84,19 @@
                     <section class="styles-contact">
                         <a class="styles-button-icon" href=""
                             ><img
-                                class="icon-witdh"
+                                class="icon-width"
                                 src="./assets/icons/MdiFacebook.svg"
                                 type="image/svg+xml"
                         /></a>
                         <a class="styles-button-icon" href=""
                             ><img
-                                class="icon-witdh"
+                                class="icon-width"
                                 src="./assets/icons/MdiLinkedin.svg"
                                 type="image/svg+xml"
                         /></a>
                         <a class="styles-button-icon" href=""
                             ><img
-                                class="icon-witdh"
+                                class="icon-width"
                                 src="./assets/icons/TeenyiconsInstagramSolid.svg"
                                 type="image/svg+xml"
                         /></a>
