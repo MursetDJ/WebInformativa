@@ -1,7 +1,21 @@
+:root {
+    --primary-color: #D9EDBF;
+    --secondary-color: #2C7865;
+    --complementary-color: #90D26D;
+    --extra-color: #FF9800;
+    --weight-light: 300;
+    --weight-medium: 500;
+    --weight-bold: 700;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
 }
 
 /* Hero */
@@ -27,9 +41,9 @@
 }
 
 .hero-titulo {
-    color: #D9EDBF;
+    color: var(--primary-color);
     font-size: 60px;
-    font-weight: 700;
+    font-weight: var(--weight-bold);
     margin: 0;
     padding: 0;
 }
@@ -37,7 +51,7 @@
 .hero-subtitulo {
     color: #ffffff;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: var(--weight-medium);
     margin: 0;
     padding: 0;
 }
@@ -69,8 +83,8 @@
 .news-discounts h3 {
     width: 100%;
     font-size: 38px;
-    font-weight: bold;
-    color: #D9EDBF;
+    font-weight: var(--weight-bold);
+    color: var(--primary-color);
     text-align: start;
 }
 
@@ -99,7 +113,7 @@
 
 .footer-segment {
     padding: 5px;
-    background-color: #D9EDBF;
+    background-color: var(--primary-color);;
     display: flex;
     flex-direction: column;
     max-height: 300px;
@@ -146,7 +160,7 @@
 }
 
 .styles-button-icon:hover {
-    background-color: #D9EDBF;
+    background-color: var(--primary-color);;
     scale: 1.5;
 }
 
