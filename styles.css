@@ -66,6 +66,11 @@ body {
 
 .data {
     text-decoration: none;
+    color: black;
+}
+
+.data:hover {
+    color: #2C7865;
 }
 
 .styles-footer {
@@ -82,6 +87,7 @@ body {
 .styles-contact {
     display: flex;
     margin-top: auto;
+    margin-right: 5px;
     justify-items: flex-end;
     justify-content: center;
     align-items: baseline;
@@ -89,4 +95,19 @@ body {
 
 .styles-button-icon {
     margin: 4px;
+    border-radius: 180px;
+    justify-content: center;
+    background-color: green;
+    padding: 6px;
+    display: flex;
+}
+
+.styles-button-icon:hover {
+    background-color: #D9EDBF;
+    scale: 1.5;
+}
+
+.icon-witdh {
+    max-width: 25px;
+    width: 100%;
 }
