@@ -4,10 +4,10 @@ Será una web informativa sobre una empresa de productos al por mayor y menor (T
 
 **Tabla De Contenidos**
 
-1. [Tareas a Realizar ☑️](#to-do)
-2. [Diseño figma 🖍️](#figma-design)
+1. [Tareas a Realizar ☑️](#tareas-a-realizar)
+2. [Diseño figma 🖍️](#diseño-figma)
 
-## TAREAS A REALIZAR {#to-do}
+## TAREAS A REALIZAR
 
 -   [ ] Completar la sección nav-bar
 
@@ -23,6 +23,6 @@ Será una web informativa sobre una empresa de productos al por mayor y menor (T
 
 -   [ ] Buscar imágenes para referenciar los productos
 
-## Diseño Figma {#figma-design}
+## Diseño Figma
 
 [![Image of Figma Design Project](./assets/home-wireframe.png "Go to the prototype project")](https://www.figma.com/proto/FLUNpikQ6Yvdq8ruBEViOY/Dise%C3%B1o-web-de-la-P%C3%A1gina-Web-Informativa?type=design&t=YfH6Ah8ca2he5LC8-1&scaling=min-zoom&page-id=0%3A1&node-id=16-709&mode=design)
