@@ -126,7 +126,7 @@ html {
     padding: 0;
 }
 
-.hero-boton {
+.hero-button {
     display: flex;
     background-color: var(--complementary-color);
     width: 266px;
@@ -229,7 +229,7 @@ html {
     scale: 1.5;
 }
 
-.icon-witdh {
+.icon-width {
     max-width: 25px;
     width: 100%;
 }
