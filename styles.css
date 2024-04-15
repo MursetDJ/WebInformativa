@@ -3,6 +3,57 @@ body {
     padding: 0px;
 }
 
+/* Hero */
+.hero {
+    display: flex;
+    background-image: url(assets/hero-banner.gif);
+    background-size: cover;
+    width: 1440px;
+    height: 700px;
+}
+
+.hero-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00523E80;
+    background-size: cover;
+    width: 1440px;
+    height: 700px;
+    text-align: center;
+    gap: 30px;
+}
+
+.hero-titulo {
+    color: #D9EDBF;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-subtitulo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-boton {
+    display: flex;
+    background-color: #90D26D;
+    width: 266px;
+    height: 66px;
+    border-radius: 35px;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
 .footer-segment {
     padding: 5px;
     background-color: #D9EDBF;
