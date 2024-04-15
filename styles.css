@@ -14,11 +14,12 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
-/* Hero */
+/* hero section*/
 .hero {
     display: flex;
     background-image: url(assets/hero-banner.gif);
@@ -111,6 +112,8 @@ body {
     background-color: #90D26D;
 }
 
+
+/* footer section */
 .footer-segment {
     padding: 5px;
     background-color: var(--primary-color);;
