@@ -93,8 +93,8 @@ html {
     display: flex;
     background-image: url(assets/hero-banner.gif);
     background-size: cover;
-    width: 1440px;
-    height: 700px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .hero-contenido {
@@ -104,8 +104,7 @@ html {
     align-items: center;
     background-color: #00523E80;
     background-size: cover;
-    width: 1440px;
-    height: 700px;
+    width: 100vw;
     text-align: center;
     gap: 30px;
 }
