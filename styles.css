@@ -88,6 +88,58 @@ html {
     font-weight: var(--weight-medium);
 }
 
+/* Header*/
+.container-header {
+    display: flex;
+    position: fixed ;
+    width: 100vw;
+    padding: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #90D26D;
+}
+
+.logo {
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.links-redes ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    list-style: none;
+}
+
+.links-redes ul li a {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+}
+
+.links-redes ul li a img {
+    width: 50px;
+    border-radius: 25px;
+}
+
 /* hero section*/
 .hero {
     display: flex;
