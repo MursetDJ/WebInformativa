@@ -402,6 +402,81 @@ html {
     background-color: #2C7865;
 }
 
+/* about-us section */
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 60px 20px;
+}
+
+.about-us-title, .about-us-subtitle {
+    font-size: 42px;
+    font-weight: var(--weight-bold);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-us-information {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 700px;
+    font-size: 24px;
+    font-weight: var(--weight-medium);
+    color: white;
+    margin-bottom: 60px;
+}
+
+.about-us-information p {
+    text-align: center;
+}
+
+.strengths-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.divisor {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.strength {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    gap: 16px;
+}
+
+.strength figure {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: var(--complementary-color);
+}
+
+.strength-title {
+    display: block;
+    width: 50%;
+    max-width: 200px;
+    font-size: 28px;
+    font-weight: var(--weight-bold);
+    color: white;
+}
+
 /* footer section */
 .footer-segment {
     padding: 5px;
@@ -469,7 +544,25 @@ html {
         text-align: center;
         padding: 0;
     }
+
     .discount-container {
         overflow-x: scroll;
+    }
+
+    .about-us-title, .about-us-subtitle {
+        font-size: 32px;
+    }
+
+    .about-us-information {
+        font-size: 20px;
+    }
+
+    .strength figure {
+        width: 130px;
+        height: 130px;
+    }
+
+    .strength-title {
+        font-size: 22px;
     }
 }
