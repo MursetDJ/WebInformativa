@@ -226,6 +226,153 @@ html {
     gap: 18px;
 }
 
+/* SECTION CATEGORIAS */
+
+.container-categorias {
+    display: flex;
+    background-color: #D9EDBF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+    gap: 4em;
+}
+
+.container-categorias h2 {
+    color: #2C7865;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.container-catalogo {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 2em 25vw;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+}
+
+.container-catalogo h3 {
+    color: #D9EDBF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.container-catalogo .titulo {
+    background-color: #2C7865;
+    width: max-content;
+    height: 46px;
+    border-radius: 15px 15px 0 0;
+    padding: 0 2em;
+    margin-left: 3em;
+}
+
+.container-catalogo .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    background-color: #90D26D;
+    width: 50vw;
+    height: auto;
+    border: 5px solid #2C7865;
+    border-radius: 15px;
+    padding: 1em;
+}
+
+/*Tarjeta de Productos*/
+.tarjeta {
+    background-color: #fff;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.info-producto {
+    text-align: center;
+}
+
+.info-producto h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info-producto h5 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.info-producto .precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #90D26D;
+    margin-bottom: 20px;
+}
+
+.info-producto .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #90D26D;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-producto .boton:hover {
+    background-color: #2C7865;
+}
+
+/* Play*/
+
+.container-catalogo .play {
+    background-color: #2C7865;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 3%;
+    right: 24%;
+}
+
+.play img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+
+.catalogo-ver .boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    padding: 1em;
+    background-color: #90D26D; /* Color de fondo verde */
+    color: #ffffff; /* Color de texto blanco */
+    text-decoration: none; /* Quitar el subrayado */
+    border: none; /* Quitar el borde */
+    border-radius: 15px; /* Redondear las esquinas */
+}
+
+.catalogo-ver .boton-enlace:hover {
+    background-color: #2C7865;
+}
+
 /* footer section */
 .footer-segment {
     padding: 5px;
