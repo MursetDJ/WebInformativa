@@ -192,6 +192,17 @@ html {
     padding: 0 20px;
 }
 
+.discount-container::-webkit-scrollbar {
+    height: 20px;
+    background-color: var(--secondary-color);
+}
+
+.discount-container::-webkit-scrollbar-thumb {
+    background-color: #90d26daf;
+    border: 6px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
 /* footer section */
 .footer-segment {
     padding: 5px;
