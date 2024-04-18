@@ -466,6 +466,13 @@ html {
     height: 180px;
     border-radius: 50%;
     background-color: var(--complementary-color);
+    overflow: hidden;
+}
+
+.strength img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .strength-title {
