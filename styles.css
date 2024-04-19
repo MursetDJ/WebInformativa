@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #D9EDBF;
-    --secondary-color: #2C7865;
-    --complementary-color: #90D26D;
-    --extra-color: #FF9800;
+    --primary-color: #d9edbf;
+    --secondary-color: #2c7865;
+    --complementary-color: #90d26d;
+    --extra-color: #ff9800;
     --weight-light: 300;
     --weight-medium: 500;
     --weight-bold: 700;
@@ -15,7 +15,7 @@
 }
 
 html {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -27,7 +27,7 @@ html {
     border-radius: 5px;
     padding: 10px 16px;
     background-color: var(--complementary-color);
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: var(--weight-medium);
     font-size: 18px;
     cursor: pointer;
@@ -47,13 +47,20 @@ html {
     min-width: 240px;
     height: 380px;
     overflow: hidden;
+    cursor: pointer;
+    background-color: #ffffff;
     border-radius: 10px;
+    box-shadow: 0 0 40px #ffffff5c;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
 .product-image-container {
     width: 100%;
     height: 55%;
-    background-color: var(--secondary-color);
 }
 
 .product-image-container img {
@@ -71,7 +78,7 @@ html {
     gap: 10px;
     width: 100%;
     height: 45%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .product-category {
@@ -106,7 +113,7 @@ html {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: #90D26D;
+    background-color: #90d26d;
     z-index: 1;
 }
 
@@ -164,7 +171,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #00523E80;
+    background-color: #00523e80;
     background-size: cover;
     width: 100vw;
     text-align: center;
@@ -229,7 +236,7 @@ html {
     font-size: 38px;
     font-weight: var(--weight-bold);
     color: var(--primary-color);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-left: 20px;
     text-align: start;
 }
@@ -262,7 +269,7 @@ html {
 
 .container-categorias {
     display: flex;
-    background-color: #D9EDBF;
+    background-color: #d9edbf;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -271,7 +278,7 @@ html {
 }
 
 .container-categorias h2 {
-    color: #2C7865;
+    color: #2c7865;
     font-size: 42px;
     font-weight: 700;
 }
@@ -288,14 +295,14 @@ html {
 }
 
 .container-catalogo h3 {
-    color: #D9EDBF;
+    color: #d9edbf;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
 }
 
 .container-catalogo .titulo {
-    background-color: #2C7865;
+    background-color: #2c7865;
     width: max-content;
     height: 46px;
     border-radius: 15px 15px 0 0;
@@ -309,10 +316,10 @@ html {
     justify-content: space-around;
     align-items: center;
     gap: 1em;
-    background-color: #90D26D;
+    background-color: #90d26d;
     width: 50vw;
     height: auto;
-    border: 5px solid #2C7865;
+    border: 5px solid #2c7865;
     border-radius: 15px;
     padding: 1em;
 }
@@ -350,14 +357,14 @@ html {
 .info-producto .precio {
     font-size: 20px;
     font-weight: bold;
-    color: #90D26D;
+    color: #90d26d;
     margin-bottom: 20px;
 }
 
 .info-producto .boton {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #90D26D;
+    background-color: #90d26d;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -365,13 +372,13 @@ html {
 }
 
 .info-producto .boton:hover {
-    background-color: #2C7865;
+    background-color: #2c7865;
 }
 
 /* Play*/
 
 .container-catalogo .play {
-    background-color: #2C7865;
+    background-color: #2c7865;
     width: 50px;
     height: 50px;
     border-radius: 10px;
@@ -388,13 +395,12 @@ html {
     height: 50px;
 }
 
-
 .catalogo-ver .boton-enlace {
     display: inline-block;
     padding: 10px 20px;
     font-size: 24px;
     padding: 1em;
-    background-color: #90D26D;
+    background-color: #90d26d;
     /* Color de fondo verde */
     color: #ffffff;
     /* Color de texto blanco */
@@ -407,7 +413,7 @@ html {
 }
 
 .catalogo-ver .boton-enlace:hover {
-    background-color: #2C7865;
+    background-color: #2c7865;
 }
 
 /* about-us section */
@@ -497,7 +503,6 @@ html {
 .footer-segment {
     padding: 5px;
     background-color: var(--primary-color);
-    ;
     display: flex;
     flex-direction: column;
     max-height: 300px;
@@ -545,7 +550,6 @@ html {
 
 .styles-button-icon:hover {
     background-color: var(--primary-color);
-    ;
     scale: 1.5;
 }
 
@@ -557,6 +561,17 @@ html {
 /* media queries */
 
 @media screen and (max-width: 900px) {
+    /* product-card */
+
+    .product-card {
+        box-shadow: none;
+    }
+
+    .product-card:hover {
+        transform: none;
+        transition: none;
+    }
+
     .news-discounts h3 {
         font-size: 30px;
         text-align: center;
@@ -567,6 +582,7 @@ html {
         overflow-x: scroll;
     }
 
+    /* about-us section */
     .about-us-title,
     .about-us-subtitle {
         font-size: 32px;
