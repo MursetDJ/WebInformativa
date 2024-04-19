@@ -31,6 +31,7 @@ html {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .secondary-button:hover {
     background-color: #ef940d;
 }
@@ -96,7 +97,7 @@ html {
 /* Header*/
 .container-header {
     display: flex;
-    position: fixed ;
+    position: fixed;
     width: 100vw;
     padding: 1em;
     flex-wrap: wrap;
@@ -391,11 +392,16 @@ html {
     padding: 10px 20px;
     font-size: 24px;
     padding: 1em;
-    background-color: #90D26D; /* Color de fondo verde */
-    color: #ffffff; /* Color de texto blanco */
-    text-decoration: none; /* Quitar el subrayado */
-    border: none; /* Quitar el borde */
-    border-radius: 15px; /* Redondear las esquinas */
+    background-color: #90D26D;
+    /* Color de fondo verde */
+    color: #ffffff;
+    /* Color de texto blanco */
+    text-decoration: none;
+    /* Quitar el subrayado */
+    border: none;
+    /* Quitar el borde */
+    border-radius: 15px;
+    /* Redondear las esquinas */
 }
 
 .catalogo-ver .boton-enlace:hover {
@@ -415,7 +421,8 @@ html {
     padding: 60px 20px;
 }
 
-.about-us-title, .about-us-subtitle {
+.about-us-title,
+.about-us-subtitle {
     font-size: 42px;
     font-weight: var(--weight-bold);
     margin-bottom: 20px;
@@ -438,7 +445,7 @@ html {
     text-align: center;
 }
 
-.strengths-container{
+.strengths-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -487,7 +494,8 @@ html {
 /* footer section */
 .footer-segment {
     padding: 5px;
-    background-color: var(--primary-color);;
+    background-color: var(--primary-color);
+    ;
     display: flex;
     flex-direction: column;
     max-height: 300px;
@@ -534,7 +542,8 @@ html {
 }
 
 .styles-button-icon:hover {
-    background-color: var(--primary-color);;
+    background-color: var(--primary-color);
+    ;
     scale: 1.5;
 }
 
@@ -556,7 +565,8 @@ html {
         overflow-x: scroll;
     }
 
-    .about-us-title, .about-us-subtitle {
+    .about-us-title,
+    .about-us-subtitle {
         font-size: 32px;
     }
 
@@ -571,5 +581,19 @@ html {
 
     .strength-title {
         font-size: 22px;
+    }
+
+    /*Footer*/
+    .footer-segment {
+        align-items: center;
+    }
+
+    .styles-footer {
+        align-items: center;
+    }
+
+    .section-foot-and-contact {
+        flex-direction: column;
+        align-items: center;
     }
 }
