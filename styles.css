@@ -21,7 +21,7 @@ html {
 
 /* buttons */
 
-.secondary-button {
+.primary-button {
     display: inline-block;
     border: 0;
     border-radius: 5px;
@@ -34,7 +34,7 @@ html {
     transition: background-color 0.3s ease;
 }
 
-.secondary-button:hover {
+.primary-button:hover {
     background-color: var(--secondary-color);
 }
 
@@ -95,6 +95,59 @@ html {
     font-size: 20px;
     font-weight: var(--weight-bold);
     color: var(--secondary-color);
+}
+
+/* Header*/
+.container-header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    padding: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #90D26D;
+    z-index: 1;
+}
+
+.logo {
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.links-redes ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    list-style: none;
+}
+
+.links-redes ul li a {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+}
+
+.links-redes ul li a img {
+    width: 50px;
+    border-radius: 25px;
 }
 
 /* hero section*/
@@ -167,8 +220,7 @@ html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 320px;
-    max-width: 600px;
+    max-width: 900px;
 }
 
 .news-discounts h3 {
@@ -190,7 +242,7 @@ html {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     gap: 40px;
     padding: 0 20px;
 }
