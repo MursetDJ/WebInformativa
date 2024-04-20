@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Code Store</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +17,7 @@
     <body>
         <header>
             <div class="container-header">
-                <a href="index.html" class="logo">Code-Store</a>
+                <a href="index.html" class="logo">Code Store</a>
                 <nav class="nav-bar">
                     <ul>
                         <li><a href="#">Inicio</a></li>
@@ -23,35 +25,67 @@
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
-                <div class="links-redes">
+                <ul class="links-redes">
+                    <li>
+                        <a href="#">
+                            <img
+                                src="assets/icons/MdiFacebook.svg"
+                                alt="facebook logo"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="assets/icons/MdiLinkedin.svg"
+                                alt="linkedIn logo"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="assets/icons/TeenyiconsInstagramSolid.svg"
+                                alt="instagram logo"
+                        /></a>
+                    </li>
+                </ul>
+                <div id="menu"></div>
+            </div>
+            <div class="dropdown-menu">
+                <nav class="nav-bar">
                     <ul>
-                        <li>
-                            <a href="#"
-                                ><img
-                                    src="assets/icons/MdiFacebook.svg"
-                                    alt="Facebokk"
-                            /></a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                ><img
-                                    src="assets/icons/MdiLinkedin.svg"
-                                    alt="Linkedin"
-                            /></a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                ><img
-                                    src="assets/icons/TeenyiconsInstagramSolid.svg"
-                                    alt="Instagram"
-                            /></a>
-                        </li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
-                </div>
+                </nav>
+                <ul class="links-redes">
+                    <li>
+                        <a href="#">
+                            <img
+                                src="assets/icons/MdiFacebook.svg"
+                                alt="facebook logo"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="assets/icons/MdiLinkedin.svg"
+                                alt="linkedIn logo"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="assets/icons/TeenyiconsInstagramSolid.svg"
+                                alt="instagram logo"
+                        /></a>
+                    </li>
+                </ul>
             </div>
         </header>
         <main>
-            <section class="nav-bar"></section>
             <section class="hero">
                 <div class="hero-contenido">
                     <h1 class="hero-titulo">
@@ -439,5 +473,15 @@
                 </section>
             </div>
         </footer>
+
+        <script>
+            const menuIcon = document.querySelector("#menu");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+
+            menuIcon.addEventListener("click", () => {
+                dropdownMenu.classList.toggle("active");
+                menuIcon.classList.toggle("active");
+            });
+        </script>
     </body>
 </html>
