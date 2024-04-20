@@ -155,12 +155,33 @@ html {
 .links-redes ul li a img {
     width: 50px;
     border-radius: 25px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    color: #2c7865;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.nav-bar ul li a:hover {
+    color:#2c7865;
+}
+
+.nav-bar ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.links-redes ul li a img:hover {
+    transform: scale(1.05);
 }
 
 /* hero section*/
 .hero {
     display: flex;
     background-image: url(assets/hero-banner.gif);
+    background-position: center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -183,7 +204,7 @@ html {
     font-size: 60px;
     font-weight: var(--weight-bold);
     margin: 0;
-    padding: 0;
+    padding: 1em;
 }
 
 .hero-subtitulo {
@@ -191,7 +212,7 @@ html {
     font-size: 24px;
     font-weight: var(--weight-medium);
     margin: 0;
-    padding: 0;
+    padding: 1em;
 }
 
 .hero-button {
@@ -206,6 +227,13 @@ html {
     align-items: center;
     color: #ffffff;
 }
+
+.hero-button:hover {
+    background-color: #2c7865;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
 
 /* news-discounts section */
 .news-discounts {
@@ -287,7 +315,8 @@ html {
     display: flex;
     position: relative;
     flex-direction: column;
-    padding: 2em 25vw;
+    align-items: center;
+    padding: 0;
     justify-content: center;
     width: 100vw;
     height: auto;
@@ -304,15 +333,14 @@ html {
 .container-catalogo .titulo {
     background-color: #2c7865;
     width: max-content;
-    height: 46px;
+    height: auto;
     border-radius: 15px 15px 0 0;
     padding: 0 2em;
-    margin-left: 3em;
 }
 
 .container-catalogo .productos {
     display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
     justify-content: space-around;
     align-items: center;
     gap: 1em;
@@ -327,14 +355,13 @@ html {
 /*Tarjeta de Productos*/
 .tarjeta {
     background-color: #fff;
-    width: auto;
     padding: 20px;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .tarjeta img {
     width: 100%;
-    height: 200px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
@@ -375,6 +402,10 @@ html {
     background-color: #2c7865;
 }
 
+.tarjeta:hover {
+    transform: scale(1.1);
+}
+
 /* Play*/
 
 .container-catalogo .play {
@@ -383,7 +414,7 @@ html {
     height: 50px;
     border-radius: 10px;
     position: absolute;
-    bottom: 3%;
+    bottom: -3%;
     right: 24%;
 }
 
@@ -397,6 +428,7 @@ html {
 
 .catalogo-ver .boton-enlace {
     display: inline-block;
+    text-align: center;
     padding: 10px 20px;
     font-size: 24px;
     padding: 1em;
@@ -414,6 +446,8 @@ html {
 
 .catalogo-ver .boton-enlace:hover {
     background-color: #2c7865;
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 /* about-us section */
@@ -561,6 +595,27 @@ html {
 /* media queries */
 
 @media screen and (max-width: 900px) {
+    /*header*/
+    .nav-bar ul {
+        gap: 10px;
+    }
+    
+    .nav-bar ul li a {
+        font-size: 15px;
+    }
+
+    .links-redes ul {
+        gap: 10px;
+    }
+    
+    .links-redes ul li a {
+        gap: 10px;
+    }
+    
+    .links-redes ul li a img {
+        width: 25px;
+    }
+
     /* product-card */
 
     .product-card {
@@ -613,5 +668,68 @@ html {
     .section-foot-and-contact {
         flex-direction: column;
         align-items: center;
+    }
+    
+    /*Categorias*/
+
+    .container-catalogo .titulo {
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .container-categorias h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container-catalogo h3 {
+        font-size: 27;
+    }
+
+} 
+
+@media screen and (max-width: 480px) {
+    /*Hero*/
+    .hero-titulo {
+        font-size: 30px;
+    }
+    
+    .hero-subtitulo {
+        font-size: 15px;
+    }
+
+    .hero-button {
+        font-size: 15px;
+        padding: auto;
+        height: auto;
+        width: auto;
+        padding: 1em;
+    }
+    
+    /*Categorias*/
+
+    .container-catalogo {
+        align-items: center;
+    }
+
+    .container-catalogo .titulo {
+        margin-left: 0;
+        align-self: center;
+        padding: 0 7.5px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .container-catalogo h3 {
+        font-size: 15px;
+    }
+
+    .container-catalogo .play {
+        bottom: -5%;
+        right: 20%;
+    }
+
+    .catalogo-ver .boton-enlace {
+        display: inline-block;
+        font-size: 15px;
     }
 }
