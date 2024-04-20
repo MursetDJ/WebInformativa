@@ -27,8 +27,7 @@ a {
     text-decoration: none;
 }
 
-/* buttons */
-
+/* <-------- buttons styles --------> */
 .primary-button {
     display: inline-block;
     border: 0;
@@ -46,12 +45,12 @@ a {
     background-color: var(--secondary-color);
 }
 
-/* product-card */
-
+/* <-------- product-card styles --------> */
 .product-card {
     position: relative;
     scroll-snap-align: center;
     width: 100%;
+    max-width: 270px;
     min-width: 240px;
     height: 380px;
     overflow: hidden;
@@ -112,8 +111,7 @@ a {
     color: var(--secondary-color);
 }
 
-/* Header*/
-
+/* <-------- header section --------> */
 header {
     width: 100%;
     height: auto;
@@ -181,6 +179,7 @@ header {
     margin: 0 auto;
 }
 
+/* <-------- menu styles --------> */
 #menu {
     display: none;
     width: 70px;
@@ -196,7 +195,7 @@ header {
     background: url("./assets/icons/close.svg");
 }
 
-/* dropdown-menu */
+/* <-------- dropdown-menu styles --------> */
 .dropdown-menu {
     display: none;
     flex-direction: column;
@@ -237,13 +236,13 @@ header {
     height: 60%;
 }
 
-/* hero section*/
+/* <-------- hero section --------> */
 .hero {
     display: flex;
     background-image: url(assets/hero-banner.gif);
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -254,7 +253,7 @@ header {
     align-items: center;
     background-color: #00523e80;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     gap: 30px;
 }
@@ -289,12 +288,12 @@ header {
 }
 
 .hero-button:hover {
-    background-color: #2c7865;
+    background-color: var(--secondary-color);
     transition: 0.3s;
     transform: scale(1.1);
 }
 
-/* news-discounts section */
+/* <-------- news-discounts section --------> */
 .news-discounts {
     display: flex;
     align-items: center;
@@ -352,11 +351,10 @@ header {
     border-radius: 10px;
 }
 
-/* SECTION CATEGORIAS */
-
+/* <-------- categories-section --------> */
 .container-categorias {
     display: flex;
-    background-color: #d9edbf;
+    background-color: var(--primary-color);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -365,7 +363,7 @@ header {
 }
 
 .container-categorias h2 {
-    color: #2c7865;
+    color: var(--secondary-color);
     font-size: 42px;
     font-weight: 700;
 }
@@ -377,20 +375,20 @@ header {
     align-items: center;
     padding: 0;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: auto;
     z-index: 0;
 }
 
 .container-catalogo h3 {
-    color: #d9edbf;
+    color: var(--primary-color);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
 }
 
 .container-catalogo .titulo {
-    background-color: #2c7865;
+    background-color: var(--secondary-color);
     width: max-content;
     height: auto;
     border-radius: 15px 15px 0 0;
@@ -403,10 +401,10 @@ header {
     justify-content: space-around;
     align-items: center;
     gap: 1em;
-    background-color: #90d26d;
-    width: 50vw;
+    background-color: var(--complementary-color);
+    width: 50%;
     height: auto;
-    border: 5px solid #2c7865;
+    border: 5px solid var(--secondary-color);
     border-radius: 15px;
     padding: 1em;
 }
@@ -443,22 +441,22 @@ header {
 .info-producto .precio {
     font-size: 20px;
     font-weight: bold;
-    color: #90d26d;
+    color: var(--complementary-color);
     margin-bottom: 20px;
 }
 
-.info-producto .boton {
+.info-producto .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #90d26d;
+    background-color: var(--complementary-color);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.info-producto .boton:hover {
-    background-color: #2c7865;
+.info-producto .button:hover {
+    background-color: var(--secondary-color);
 }
 
 .tarjeta:hover {
@@ -468,7 +466,7 @@ header {
 /* Play*/
 
 .container-catalogo .play {
-    background-color: #2c7865;
+    background-color: var(--secondary-color);
     width: 50px;
     height: 50px;
     border-radius: 10px;
@@ -485,13 +483,13 @@ header {
     height: 50px;
 }
 
-.catalogo-ver .boton-enlace {
+.catalogo-ver .button-enlace {
     display: inline-block;
     text-align: center;
     padding: 10px 20px;
     font-size: 24px;
     padding: 1em;
-    background-color: #90d26d;
+    background-color: var(--complementary-color);
     /* Color de fondo verde */
     color: #ffffff;
     /* Color de texto blanco */
@@ -503,14 +501,13 @@ header {
     /* Redondear las esquinas */
 }
 
-.catalogo-ver .boton-enlace:hover {
-    background-color: #2c7865;
+.catalogo-ver .button-enlace:hover {
+    background-color: var(--secondary-color);
     transform: scale(1.05);
     transition: 0.3s;
 }
 
-/* about-us section */
-
+/* <-------- about-us section --------> */
 .about-us {
     display: flex;
     flex-direction: column;
@@ -592,7 +589,7 @@ header {
     color: white;
 }
 
-/* footer section */
+/* <-------- footer section --------> */
 .footer-segment {
     padding: 5px;
     background-color: var(--primary-color);
@@ -651,8 +648,7 @@ header {
     width: 100%;
 }
 
-/* media queries */
-
+/* <-------- media queries --------> */
 @media screen and (max-width: 900px) {
     /* product-card */
     .product-card {
@@ -788,7 +784,7 @@ header {
         right: 20%;
     }
 
-    .catalogo-ver .boton-enlace {
+    .catalogo-ver .button-enlace {
         display: inline-block;
         font-size: 15px;
     }
