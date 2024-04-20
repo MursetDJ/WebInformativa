@@ -50,6 +50,7 @@ a {
     position: relative;
     scroll-snap-align: center;
     width: 100%;
+    max-width: 270px;
     min-width: 240px;
     height: 380px;
     overflow: hidden;
