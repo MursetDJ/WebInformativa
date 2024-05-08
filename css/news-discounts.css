@@ -1,0 +1,57 @@
+/* <-------- news-discounts section --------> */
+.news-discounts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    column-gap: 50px;
+    row-gap: 40px;
+    padding: 40px 20px;
+    background-color: var(--secondary-color);
+}
+
+.sales,
+.new-this-week {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+}
+
+.news-discounts h3 {
+    align-self: center;
+    width: 100%;
+    font-size: 38px;
+    font-weight: var(--weight-bold);
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    padding-left: 20px;
+    text-align: start;
+}
+
+.discount-container {
+    display: flex;
+    position: relative;
+    align-self: center;
+    overflow-x: unset;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    width: 100%;
+    max-width: 900px;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.discount-container::-webkit-scrollbar {
+    height: 20px;
+    background-color: var(--secondary-color);
+}
+
+.discount-container::-webkit-scrollbar-thumb {
+    background-color: #90d26daf;
+    border: 6px solid var(--secondary-color);
+    border-radius: 10px;
+}
