@@ -1,0 +1,69 @@
+/* <-------- header section --------> */
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--complementary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #130548;
+    font-size: 36px;
+    font-weight: var(--weight-bold);
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-bar ul li a {
+    color: #130548;
+    font-size: 24px;
+    font-weight: var(--weight-medium);
+}
+
+.nav-bar ul li a:hover {
+    transition: color 0.3s ease;
+    color: #4f30c0;
+}
+
+.links-redes {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.links-redes li a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.links-redes li a:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: #130548;
+}
+
+.links-redes li a img {
+    width: 80%;
+    height: 80%;
+    align-self: center;
+    margin: 0 auto;
+}

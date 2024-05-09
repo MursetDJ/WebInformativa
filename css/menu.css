@@ -1,0 +1,15 @@
+/* <-------- menu styles --------> */
+#menu {
+    display: none;
+    width: 70px;
+    height: 70px;
+    background: url("./../assets/icons/menu.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#menu.active {
+    background: url("./../assets/icons/close.svg");
+}
